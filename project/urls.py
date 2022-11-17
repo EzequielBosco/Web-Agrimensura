@@ -19,5 +19,5 @@ from principal.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('principal/', index),
+    path('template/principal/', index),
 ]
