@@ -6,12 +6,18 @@
         <main class="mb-4">
             <header class="py-5 bg-light border-bottom mb-4" style="background-image: url('{% static 'principal/assets/img/fondo-autocad1.png' %}');">
                 <div class="container px-4 px-lg-5 text-center">
-                    <h3>Complete el formulario para que podamos comunicarnos lo más rápido posible!</35>
+                    <h1>Contacto</h1>
                 </div>
             </header>
-            <div class="container px-4 px-lg-5">
+                <div class="container text-center">
+                    <h3>Complete el formulario para que podamos comunicarnos lo antes posible!</h3>
+                </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <div class="container px-2 px-lg-10">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="col-lg-7">
+                    <div class="col-md-10 col-lg-10 col-xl-10">
                         <div class="my-5">
                             <form id="contactForm" data-sb-form-api-token="API_TOKEN" form  enctype='multipart/form-data' method="post">
                                 {% csrf_token %}
@@ -23,7 +29,7 @@
                                 <p>
                                     <label for="id_servicio">Servicio requerido</label><br>
                                     <select name="servicio" required="" id="id_servicio">
-                                        <option value="" selected="">---------------------------------SELECCIONAR---------------------------------------</option>
+                                        <option value="" selected="">-------------------------SELECCIONAR-------------------------</option>
                                         <option value="1">Mensura</option>
                                         <option value="2">Estado parcelario</option>
                                         <option value="3">Relevamiento</option>
@@ -58,11 +64,48 @@
                             </form>
                         </div>
                     </div>
+                    </div>
+                    <div class="col-lg-4">
+                    <!-- Categories widget-->
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <div class="card mb-4">
+                        <div class="card-header">CONTACTO AGB | Agrimensura</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Ingeniero Agrimensor</li>
+                                        <li>Hector Bosco</li>
+                                        <!-- Divider-->
+                                        <hr class="my-4" />
+                                        <li>Teléfono:</li>
+                                        <li>Correo:</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- Divider-->
+                        <div class="card mb-4">
+                        <div class="card-header">CONTACTO AGB | Agrimensura</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Estudiante Agrimensura UBA</li>
+                                        <li>Ezequiel Bosco</li>
+                                        <!-- Divider-->
+                                        <hr class="my-4" />
+                                        <li>Teléfono:</li>
+                                        <li>Correo:</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <!-- Core theme JS-->
-        <script src="{% static 'js/scripts.js' %}"></script>
 {% endblock %}
