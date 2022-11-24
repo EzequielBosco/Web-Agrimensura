@@ -4,4 +4,4 @@ from formularios.models import Contacto
 class ContactoForm(ModelForm):
     class Meta:
         model = Contacto
-        fields = ('nombre', 'correo', 'telefono', 'mensaje')
+        fields = ('nombre', 'servicio', 'localidad', 'correo', 'telefono', 'mensaje')

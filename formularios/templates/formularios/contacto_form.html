@@ -4,18 +4,41 @@
 {% load static %}
         <!-- Main Content-->
         <main class="mb-4">
+            <header class="py-5 bg-light border-bottom mb-4" style="background-image: url('{% static 'principal/assets/img/fondo-autocad1.png' %}');">
+                <div class="container px-4 px-lg-5 text-center">
+                    <h3>Complete el formulario para que podamos comunicarnos lo más rápido posible!</35>
+                </div>
+            </header>
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <h5>¿Querés ponerte en contacto?</h5>
-                        <p>Completa el formulario para que podamos comunicarnos lo más rápido posible!</p>
                         <div class="my-5">
                             <form id="contactForm" data-sb-form-api-token="API_TOKEN" form  enctype='multipart/form-data' method="post">
                                 {% csrf_token %}
                                 <div class="form-floating">
                                 <p>
-                                    <label for="id_nombre">Nombre</label>
-                                        <input type="text" name="nombre" class="form-control" maxlength="20" placeholder="Ingrese su nombre..." autofocus="" required="" id="id_nombre">
+                                    <label for="id_nombre">Nombre y Apellido</label>
+                                        <input type="text" name="nombre" class="form-control" maxlength="20" placeholder="Ingrese su nombre y apellido..." autofocus="" required="" id="id_nombre">
+                                </p>
+                                <p>
+                                    <label for="id_servicio">Servicio requerido</label><br>
+                                    <select name="servicio" required="" id="id_servicio">
+                                        <option value="" selected="">---------------------------------SELECCIONAR---------------------------------------</option>
+                                        <option value="1">Mensura</option>
+                                        <option value="2">Estado parcelario</option>
+                                        <option value="3">Relevamiento</option>
+                                        <option value="4">Amojonamiento</option>
+                                        <option value="5">Replanteo</option>
+                                        <option value="6">Subdivision en Propiedad horizontal</option>
+                                        <option value="7">Unificación</option>
+                                        <option value="8">Loteo</option>
+                                        <option value="9">Plano de usucapión</option>
+                                        <option value="10">Barrio cerrado o club de campo</option>
+                                      </select>
+                                </p>
+                                <p>
+                                    <label for="id_localidad">Localidad</label>
+                                        <input type="text" name="localidad" class="form-control" maxlength="20" placeholder="Ingrese su localidad..." autofocus="" required="" id="id_localidad">
                                 </p>
                                 <p>
                                     <label for="id_correo">Correo</label>
