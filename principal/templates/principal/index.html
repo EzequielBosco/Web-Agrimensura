@@ -13,13 +13,13 @@
         <link href="{% static 'principal/css/styles.css' %}" rel="stylesheet">
     </head>
     <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav  id="arriba" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'home' %}">AGB | Agrimensura Bosco</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link" href="">¿Quiénes somos?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">¿Quiénes somos?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#trabajos">¿Qué hacemos?</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Preguntas frecuentes</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'contacto' %}">Contacto</a></li>
@@ -29,7 +29,7 @@
         </nav>
         <!-- Page header with logo and tagline-->
         <header class="py-5 bg-light border-bottom mb-4" style="background-image: url('{% static 'principal/assets/img/' %}');">
-            <div class="container">
+            <div id="arriba" class="container">
                 <div class="text-center my-5">
                     <h1 class="fw-bolder">Agrimensura Bosco</h1>
                     <p class="lead mb-0">Midiendo desde 1988</p>
@@ -37,122 +37,173 @@
                 </div>
             </div>
         </header>
-        <body style="background-image: url('{% static 'principal/assets/img/toposa.jpg' %}');">
-        <div class="container text-center" aria-busy="true">
-        <h2>Servicios que ofrecemos</h2>
+        <div class="text-center navbar-expand-lg bg-dark">
+            <div id="nosotros" class="container text-center">
+                <h1>Sobre nosotros</h1>
+            </div>
+        </div>
+        <div class="text-center navbar-expand-lg bg-dark">
+            <div id="trabajos" class="container text-center">
+                <h1>Servicios que ofrecemos</h1>
+            </div>
+        </div>
+        <body style="background-image: url('{% static 'principal/assets/img/toposa2.jpg' %}');">
         </div>
         <div class="container">
             <div class="row gx-4 gx-lg-5 row-cols-5 row-cols-md-5 row-cols-xl-5 justify-content-center">
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim2.jpg' %}"/>
+                        <img style="max-width:100%;" width="100px" height="210px" class="card-img-top" src="{% static 'principal/assets/img/agrim2a.jpg' %}"/>
                         <div class="container text-center">
                         <h4 class="post-title">Mensuras</h4>
                         <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim3.jpg' %}"/>
+                        <img style="max-width:100%;" width="60px" height="180px" class="card-img-top" src="{% static 'principal/assets/img/agrim3a.jpg' %}"/>
                         <div class="container text-center">
                         <h4 class="post-title">Estados Parcelarios</h4>
                         <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim1.jpg' %}"/>
+                        <img style="max-width:100%;" width="100px" height="210px" class="card-img-top" src="{% static 'principal/assets/img/agrim1a.jpg' %}"/>
                         <div class="container text-center">
                         <h4 class="post-title">Relevamientos</h4>
                         <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim4.jpg' %}"/>
+                        <img style="max-width:100%;" width="100px" height="210px" class="card-img-top" src="{% static 'principal/assets/img/agrim4a.jpg' %}"/>
                         <div class="container text-center">
                         <h4 class="post-title">Amojonamientos</h4>
                         <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim5.jpg' %}"/>
+                        <img style="max-width:100%;" width="100px" height="210px" class="card-img-top" src="{% static 'principal/assets/img/agrim5a.jpg' %}"/>
                         <div class="container text-center">
                         <h4 class="post-title">Replanteos</h4>
                         <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim2.jpg' %}"/>
-                        <div class="container text-center">
-                        <h4 class="post-title">Popiedad Horizontal</h4>
-                        <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <!-- Post preview-->
-                    <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim3.jpg' %}"/>
+                        <img style="max-width:100%;" width="100px" height="210px" class="card-img-top" src="{% static 'principal/assets/img/agrim2a.jpg' %}"/>
                         <div class="container text-center">
                         <h4 class="post-title">Unificación</h4>
                         <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim1.jpg' %}"/>
+                        <img style="max-width:100%;" width="60px" height="180px" class="card-img-top" src="{% static 'principal/assets/img/agrim3a.jpg' %}"/>
+                        <div class="container text-center">
+                        <h4 class="post-title">Popiedad Horizontal</h4>
+                        <span class="post-subtitle"></span>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <!-- Post preview-->
+                    <div class="card h-100">
+                        <img style="max-width:100%;" width="100px" height="210px" class="card-img-top" src="{% static 'principal/assets/img/agrim1a.jpg' %}"/>
                         <div class="container text-center">
                         <h4 class="post-title">Loteos</h4>
                         <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim4.jpg' %}"/>
+                        <img style="max-width:100%;" width="100px" height="210px" class="card-img-top" src="{% static 'principal/assets/img/agrim4a.jpg' %}"/>
                         <div class="container text-center">
                         <h4 class="post-title">Usucapión</h4>
                         <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" class="card-img-top" src="{% static 'principal/assets/img/agrim5.jpg' %}"/>
+                        <img style="max-width:100%;" width="100px" height="210px"class="card-img-top" src="{% static 'principal/assets/img/agrim5a.jpg' %}"/>
                         <div class="container text-center">
                         <h4 class="post-title">Barrios cerrados</h4>
                         <span class="post-subtitle"></span>
-                        <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center">
+                <a class="btn btn-outline-dark flex-shrink-0" href="#arriba">Ir al inicio</a>
             </div>
         </div>
         <!-- Footer-->

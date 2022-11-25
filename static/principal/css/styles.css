@@ -97,6 +97,10 @@ hr {
   opacity: 0.25;
 }
 
+#id-subtitulo1 {
+  font-size: medium;
+  color: orange !important
+}
 hr:not([size]) {
   height: 1px;
 }
