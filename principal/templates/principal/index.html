@@ -28,7 +28,7 @@
             </div>
         </nav>
         <!-- Page header with logo and tagline-->
-        <header class="py-5 bg-light border-bottom mb-4" style="background-image: url('{% static 'principal/assets/img/' %}');">
+        <header class="py-5 bg-light border-bottom mb-4" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
             <div id="arriba" class="container">
                 <div class="text-center my-5">
                     <h1 class="fw-bolder">Agrimensura Bosco</h1>
@@ -37,16 +37,17 @@
                 </div>
             </div>
         </header>
-        <div id="nosotros" class="text-center py-3 bg-light border-bottom mb-4">
-            <h2>Sobre nosotros</h2>
+        <div id="nosotros" style="margin-top:-25px" class="navbar navbar-expand-lg bg-dark"></div>
+        <div class="text-center py-3 bg-light border-bottom mb-4">
+            <h2>- Sobre nosotros -</h2>
         </div>
-        <body style="background-image: url('{% static 'principal/assets/img/toposa2.jpg' %}');">
+        <body style="background-image: url('{% static 'principal/assets/img/fondo-autocad3.jpg' %}');">
             <div class="container px-2 px-lg-10">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4">
                         <div class="col-md-10 col-lg-10 col-xl-10">
                             <div class="my-0">
-                                <div class="card h-100">
+                                <div class="card h-100" style="background-image: url('{% static 'principal/assets/img/toposa1.jpg' %}');">
                                     <div class="text-center">
                                         <img style="margin:14px;" width="250px" height="300px" src="{% static 'principal/assets/img/estacioncampopanoramica.jpg' %}">
                                     </div>
@@ -76,51 +77,57 @@
                 </div>
             </div>
             </div>
-            <!-- Divider-->
-            <hr class="my-4" />
+            <br>
+            <br>
+            <br>
             <div class="container px-2 px-lg-10">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="col-md-10 col-lg-10 col-xl-10">
+                            <div class="my-0">
+                                    <div class="col-lg-14">
+                                        <div class="card mb-10">
+                                            <div class="card-header">
+                                                <h2>Ezequiel Bosco</h2><br>
+                                                <b>Estudiante Ingenieria en Agrimensura</b>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-10">
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li>....</li>
+                                                            <li>...</li>
+                                                            <li>...</li>
+                                                            <li>...</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
                     <div class="col-lg-4">
                         <div class="col-md-10 col-lg-10 col-xl-10">
                             <div class="my-0">
-                                <div class="card h-100">
+                                <div class="card h-100" style="background-image: url('{% static 'principal/assets/img/toposa1.jpg' %}');">
                                     <div class="text-center">
-                                        <img style="margin:14px;" width="250px" height="300px" src="{% static 'principal/assets/img/estacioncampo.jpg' %}">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h2>Ezequiel Bosco</h2><br>
-                            <b>Estudiante Ingenieria en Agrimensura</b>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-10">
-                                    <ul class="list-unstyled mb-0">
-                                        <li>....</li>
-                                        <li>...</li>
-                                        <li>...</li>
-                                        <li>...</li>
-                                    </ul>
+                                    <img style="margin:14px;" width="250px" height="300px" src="{% static 'principal/assets/img/estacioncampo.jpg' %}">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="container text-center">
-                    <a href="{% url 'contacto' %}"><button class="btn btn-outline-light" type="button" href=""><h6>Contactanos</></button></a>
+                    <a href="{% url 'contacto' %}"><button class="btn btn-outline-light" type="button" href="">Contactanos</button></a>
                 </div>
             </div>
         </div>
-        </div>
-        <!-- Divider-->
-        <hr class="my-4" />
-        <div id="trabajos" class="text-center py-3 bg-light border-bottom mb-4">
-            <h2>Servicios que ofrecemos</h2>
+        <br>
+        <div id="trabajos" class="navbar navbar-expand-lg navbar-dark bg-dark"></div>
+        <div class="text-center py-3 bg-light border-bottom mb-4">
+            <h2>- Servicios que ofrecemos -</h2>
         </div>
         </div>
         <div class="container">
@@ -128,13 +135,13 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/estacioncampopanoramica1.jpg' %}"/>
+                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/estacioncampopanoramica1.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Mensuras</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'mensura' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
@@ -142,13 +149,13 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/20221021_114637.jpg' %}"/>
+                        <img style="max-width:100%;" width="100" height="227" class="card-img-top" src="{% static 'principal/assets/img/20221021_114637.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Estados Parcelarios</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'estado-parcelario' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
@@ -156,13 +163,13 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial.jpg' %}"/>
+                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Relevamientos</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'relevamiento' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
@@ -170,13 +177,13 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/estacion_frente.jpg' %}"/>
+                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/estacion_axo.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Amojonamientos</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'amojonamiento' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
@@ -184,13 +191,13 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/anotando1.jpg' %}"/>
+                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/anotando1.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Replanteos</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'replanteo' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
@@ -198,13 +205,13 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/20221021_114637.jpg' %}"/>
+                        <img style="max-width:100%;" width="100" height="227" class="card-img-top" src="{% static 'principal/assets/img/estacion_frente.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Propiedad Horizontal</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'propiedad-horizontal' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
@@ -212,13 +219,13 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/aparatos1.jpg' %}"/>
+                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/aparatos1.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Unificación</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'unificacion' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
@@ -226,13 +233,13 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;"width="" height="" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial1.jpg' %}"/>
+                        <img style="max-width:100%;"width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/loteos.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Loteos</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'loteo' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
@@ -240,13 +247,13 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/estacion_axo.jpg' %}"/>
+                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial1.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Usucapión</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'usucapion' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
@@ -254,21 +261,22 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="" height=""class="card-img-top" src="{% static 'principal/assets/img/estacioncampo.jpg' %}"/>
+                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/estacioncampo.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Barrios cerrados</h5>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'barrio-cerrado-club' %}">Leer más →</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark"></div>
         <div id="preguntas" class="text-center py-3 bg-light border-bottom mb-4">
-            <h2>Preguntas Frecuentes</h2>
+            <h2>- Preguntas Frecuentes -</h2>
         </div>
             <div class="container px-2 px-lg-10">
                 <div class="row gx-4 gx-lg-7 justify-content-center">
@@ -276,7 +284,7 @@
                         <div class="col-md-10 col-lg-10 col-xl-10">
                             <div class="my-0">
                                 <div class="card h-100">
-                                    <div class="text-center">
+                                    <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
                                         <ul class="">
                                             <li><b>¿Tenemos equipamiento propio?</b></li>
                                         </ul>
@@ -300,15 +308,45 @@
                 </div>
             </div>
             </div>
-            <!-- Divider-->
-            <hr class="my-4" />
+            <br>
             <div class="container px-2 px-lg-10">
                 <div class="row gx-4 gx-lg-7 justify-content-center">
                     <div class="col-lg-4">
                         <div class="col-md-10 col-lg-10 col-xl-10">
                             <div class="my-0">
                                 <div class="card h-100">
-                                    <div class="text-center">
+                                    <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
+                                        <ul class="">
+                                            <li><b>¿Por que área trabajamos?</b></li>
+                                            <img width="30px" height="30px" src="{% static 'principal/assets/img/ubicacion.png' %}">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Realizamos trabajos por todo Buenos Aires, pero si es de otra zona puede dejar un mensaje y nos ponemos en contacto para encontrarnos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container px-2 px-lg-10">
+                <div class="row gx-4 gx-lg-7 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="col-md-10 col-lg-10 col-xl-10">
+                            <div class="my-0">
+                                <div class="card h-100">
+                                    <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
                                         <ul class="">
                                             <li><b>¿Somos profesionales matriculados?</b></li>
                                         </ul>
@@ -323,17 +361,81 @@
                             <div class="row">
                                 <div class="col-sm-10">
                                     <ul class="list-unstyled mb-0">
-                                        <li>Hector Rafael Bosco es un Ingeniero Agrimensor recibido de la UM en 1988</li>
-                                        <li>Ezequiel Bosco es actualmente estudiando de Ingenieria en Agrimensura en la UBA</li>
+                                        <li>Hector Rafael Bosco es un Ingeniero Agrimensor recibido de la UM en 1988.</li>
+                                        <li>Ezequiel Bosco es estudiante, actualmente cursando Ingenieria en Agrimensura en la UBA.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container text-center">
-                        <a style="margin-bottom:10px;" class="btn btn-outline-light flex-shrink-0" href="#arriba">Ir al inicio</a>
+                <br>
+                <div class="container px-2 px-lg-10">
+                    <div class="row gx-4 gx-lg-7 justify-content-center">
+                        <div class="col-lg-4">
+                            <div class="col-md-10 col-lg-10 col-xl-10">
+                                <div class="my-0">
+                                    <div class="card h-100">
+                                        <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
+                                            <ul class="">
+                                                <li><b>¿Como contactarnos?</b></li>
+                                                <img width="30px" height="30px" src="{% static 'principal/assets/img/correocontacto.png' %}">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Deje un mensaje haciendo Click en &nbsp; <a href="{% url 'contacto' %}"><button class="btn btn-outline-dark" type="button" href="">Contacto</button></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                    <div class="container px-2 px-lg-10">
+                        <div class="row gx-4 gx-lg-7 justify-content-center">
+                            <div class="col-lg-4">
+                                <div class="col-md-10 col-lg-10 col-xl-10">
+                                    <div class="my-0">
+                                        <div class="card h-100">
+                                            <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
+                                                <ul class="">
+                                                    <li><b>¿A qué nos dedicamos?</b></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <ul class="list-unstyled mb-0">
+                                                <li>Realizamos trabajos de agrimensura  &nbsp; <a href="#trabajos"><button class="btn btn-outline-dark" type="button" href="">Ver Trabajos</button></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <a style="margin-bottom:15px;" class="btn btn-outline-light flex-shrink-0" href="#arriba">Volver al inicio</a>
+        </div>
             </div>
         </div>
         <!-- Footer-->
@@ -343,7 +445,11 @@
                     <a class="btn-outline-dark flex-shrink-0" href="">
                     <img src="{% static 'principal/assets/img/instagrama.png' %}" alt="Instagram"></a>
                     <style class="aps-icon-front-style">.icon-1-3 img{height:50px;width:50px;opacity:1;-moz-box-shadow:0px 0px 0px 0 ;-webkit-box-shadow:0px 0px 0px 0 ;box-shadow:0px 0px 0px 0 ;padding:0;}.icon-1-3 .aps-icon-tooltip:before{border-color:white}</style>
-                    <br>Instagram
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a class="btn-outline-dark flex-shrink-0" href="">
+                    <img src="{% static 'principal/assets/img/whatsappa.png' %}" alt="Whatsapp"></a>
+                    <style class="aps-icon-front-style">.icon-1-3 img{height:50px;width:50px;opacity:1;-moz-box-shadow:0px 0px 0px 0 ;-webkit-box-shadow:0px 0px 0px 0 ;box-shadow:0px 0px 0px 0 ;padding:0;}.icon-1-3 .aps-icon-tooltip:before{border-color:white}</style>
+                    <br>Instagram &nbsp; &nbsp; Whatsapp
                 </div>
             </div>
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Agrimensura Bosco | Web 2022 | Todos los derechos reservados</p></div>

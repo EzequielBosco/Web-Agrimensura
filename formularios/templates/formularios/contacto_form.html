@@ -23,8 +23,8 @@
                                 {% csrf_token %}
                                 <div class="form-floating">
                                 <p>
-                                    <label for="id_nombre">Nombre y Apellido</label>
-                                        <input type="text" name="nombre" class="form-control" maxlength="20" placeholder="Ingrese su nombre y apellido..." autofocus="" required="" id="id_nombre">
+                                    <label for="id_nombre">Nombre</label>
+                                        <input type="text" name="nombre" class="form-control" maxlength="20" placeholder="Ingrese su nombre..." autofocus="" required="" id="id_nombre">
                                 </p>
                                 <p>
                                     <label for="id_servicio">Servicio requerido</label><br>
@@ -67,8 +67,8 @@
                     </div>
                     <div class="col-lg-4">
                     <!-- Categories widget-->
-                    <!-- Divider-->
-                    <hr class="my-4" />
+                    <br>
+                    <br>
                     <div class="card mb-4">
                         <div class="card-header">AGB | Agrimensura <br>
                             <img width="60px" height="40px" src="{% static 'principal/assets/img/correo.jpg' %}">
@@ -82,7 +82,7 @@
                                         <li>Hector Bosco</li>
                                         <!-- Divider-->
                                         <hr class="my-4" />
-                                        <li>Teléfono:</li>
+                                        <li><img width="30px" height="30px" src="{% static 'principal/assets/img/correocontacto.png' %}">Teléfono:</li>
                                         <li></li>
                                     </ul>
                                 </div>
@@ -103,11 +103,28 @@
                                         <li>Ezequiel Bosco</li>
                                         <!-- Divider-->
                                         <hr class="my-4" />
-                                        <li>Teléfono:</li>
+                                        <li><img width="30px" height="30px" src="{% static 'principal/assets/img/correocontacto.png' %}"> Teléfono:</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                Ubicacion
+                                <img width="30px" height="30px" src="{% static 'principal/assets/img/ubicacion.png' %}">
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Trabajamos por todo Buenos Aires</li>
+                                            <!-- Divider-->
+                                            <hr class="my-4" />
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,28 @@
+{% extends 'principal/base.html' %}
+{% block nav %}{% endblock %}
+{% block contenido %}
+{% load static %}
+<!-- Page header with logo and tagline-->
+<header class="py-5 bg-light border-bottom mb-4" style="background-image: url('{% static 'principal/assets/img/fondo-autocad1.png' %}');">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="fw-bolder">Loteo</h1>
+            <a href="{% url 'contacto' %}"><button class="btn btn-outline-dark flex-shrink-0" type="button" href="">Solicitar Presupuesto</button></a>
+        </div>
+    </div>
+</header>
+<!-- Page content-->
+<body style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
+    <div class="container" >
+        <div class="row">
+            <h5><b>Mensura</b></h5>
+            <div class="col-lg-10">
+                <div class="row container">
+                    <div class="col-lg-6">
+                        El trabajo de mensura es
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
