@@ -21,7 +21,7 @@
                     <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav me-auto">
                         <li class="nav-item"><a class="nav-link" href="#nosotros">¿Quiénes somos?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#trabajos">¿Qué hacemos?</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Preguntas frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas frecuentes</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'contacto' %}">Contacto</a></li>
                     </ul>
                 </div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </header>
-        <div id="nosotros" class="text-center py-4 bg-light border-bottom mb-4">
+        <div id="nosotros" class="text-center py-3 bg-light border-bottom mb-4">
             <h2>Sobre nosotros</h2>
         </div>
         <body style="background-image: url('{% static 'principal/assets/img/toposa2.jpg' %}');">
@@ -111,12 +111,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="container text-center">
+                    <a href="{% url 'contacto' %}"><button class="btn btn-outline-light" type="button" href=""><h6>Contactanos</></button></a>
+                </div>
             </div>
         </div>
         </div>
         <!-- Divider-->
         <hr class="my-4" />
-        <div id="trabajos" class="text-center py-4 bg-light border-bottom mb-4">
+        <div id="trabajos" class="text-center py-3 bg-light border-bottom mb-4">
             <h2>Servicios que ofrecemos</h2>
         </div>
         </div>
@@ -125,7 +128,7 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="50px" height="160px" class="card-img-top" src="{% static 'principal/assets/img/2.jpg' %}"/>
+                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/estacioncampopanoramica1.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Mensuras</h5>
                         </div>
@@ -139,7 +142,7 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="10px" height="136x" class="card-img-top" src="{% static 'principal/assets/img/3.jpg' %}"/>
+                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/20221021_114637.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Estados Parcelarios</h5>
                         </div>
@@ -153,7 +156,7 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="50px" height="160px" class="card-img-top" src="{% static 'principal/assets/img/5.jpg' %}"/>
+                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Relevamientos</h5>
                         </div>
@@ -167,7 +170,7 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="50px" height="160px" class="card-img-top" src="{% static 'principal/assets/img/4.jpg' %}"/>
+                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/estacion_frente.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Amojonamientos</h5>
                         </div>
@@ -181,7 +184,7 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="50px" height="160px" class="card-img-top" src="{% static 'principal/assets/img/1.jpg' %}"/>
+                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/anotando1.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Replanteos</h5>
                         </div>
@@ -195,7 +198,21 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="50px" height="160px" class="card-img-top" src="{% static 'principal/assets/img/2.jpg' %}"/>
+                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/20221021_114637.jpg' %}"/>
+                        <div class="container text-center">
+                        <h5 class="post-title">Propiedad Horizontal</h5>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <!-- Post preview-->
+                    <div class="card h-100">
+                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/aparatos1.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Unificación</h5>
                         </div>
@@ -209,21 +226,7 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="10px" height="136px" class="card-img-top" src="{% static 'principal/assets/img/3.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Popiedad Horizontal</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'trabajos' %}">Leer más →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <!-- Post preview-->
-                    <div class="card h-100">
-                        <img style="max-width:100%;"width="50px" height="160px" class="card-img-top" src="{% static 'principal/assets/img/5.jpg' %}"/>
+                        <img style="max-width:100%;"width="" height="" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial1.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Loteos</h5>
                         </div>
@@ -237,7 +240,7 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="50px" height="160px" class="card-img-top" src="{% static 'principal/assets/img/4.jpg' %}"/>
+                        <img style="max-width:100%;" width="" height="" class="card-img-top" src="{% static 'principal/assets/img/estacion_axo.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Usucapión</h5>
                         </div>
@@ -251,7 +254,7 @@
                 <div class="col mb-5">
                     <!-- Post preview-->
                     <div class="card h-100">
-                        <img style="max-width:100%;" width="50px" height="160px"class="card-img-top" src="{% static 'principal/assets/img/1.jpg' %}"/>
+                        <img style="max-width:100%;" width="" height=""class="card-img-top" src="{% static 'principal/assets/img/estacioncampo.jpg' %}"/>
                         <div class="container text-center">
                         <h5 class="post-title">Barrios cerrados</h5>
                         </div>
@@ -263,16 +266,82 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center">
-                <a style="margin-bottom:10px;" class="btn btn-outline-dark flex-shrink-0" href="#arriba">Ir al inicio</a>
+        </div>
+        <div id="preguntas" class="text-center py-3 bg-light border-bottom mb-4">
+            <h2>Preguntas Frecuentes</h2>
+        </div>
+            <div class="container px-2 px-lg-10">
+                <div class="row gx-4 gx-lg-7 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="col-md-10 col-lg-10 col-xl-10">
+                            <div class="my-0">
+                                <div class="card h-100">
+                                    <div class="text-center">
+                                        <ul class="">
+                                            <li><b>¿Tenemos equipamiento propio?</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Sí, tenemos todo el equipo necesario para realizar los trabajos, y es de nuestra propiedad.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <div class="container px-2 px-lg-10">
+                <div class="row gx-4 gx-lg-7 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="col-md-10 col-lg-10 col-xl-10">
+                            <div class="my-0">
+                                <div class="card h-100">
+                                    <div class="text-center">
+                                        <ul class="">
+                                            <li><b>¿Somos profesionales matriculados?</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Hector Rafael Bosco es un Ingeniero Agrimensor recibido de la UM en 1988</li>
+                                        <li>Ezequiel Bosco es actualmente estudiando de Ingenieria en Agrimensura en la UBA</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center">
+                        <a style="margin-bottom:10px;" class="btn btn-outline-light flex-shrink-0" href="#arriba">Ir al inicio</a>
+                </div>
             </div>
         </div>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="aps-group text-center">
                 <div class="aps-each-icon icon-1-3" style="margin-bottom:10px;" data-aps-tooltip="Instagram">
-                    <a href="">
-                    <img src="{% static 'principal/assets/img/instagram.png' %}" alt="Instagram"></a>
+                    <a class="btn-outline-dark flex-shrink-0" href="">
+                    <img src="{% static 'principal/assets/img/instagrama.png' %}" alt="Instagram"></a>
                     <style class="aps-icon-front-style">.icon-1-3 img{height:50px;width:50px;opacity:1;-moz-box-shadow:0px 0px 0px 0 ;-webkit-box-shadow:0px 0px 0px 0 ;box-shadow:0px 0px 0px 0 ;padding:0;}.icon-1-3 .aps-icon-tooltip:before{border-color:white}</style>
                     <br>Instagram
                 </div>
