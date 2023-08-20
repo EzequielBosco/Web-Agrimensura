@@ -1,0 +1,33 @@
+:root {
+    --color-nav: rgb(33, 37, 41);
+}
+
+hr {
+    background-color: var(--color-nav);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.title-index {
+    margin: 20px;
+    font-size: 40px;
+}
+
+.card-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 320px;
+    padding: 0px;
+    background-color: var(--color-nav);
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.img-nosotros {
+    margin: 10px;
+    padding: 0;
+}
