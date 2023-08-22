@@ -1,9 +1,9 @@
 from django.urls import path
-from trabajos.views import Mensura, Estadoparcelario, Relevamiento, Amojonamiento, Replanteo, PropiedadHorizontal, Unificacion, Loteo, Usucapion, BarrioCerradoClub
+from trabajos.views import Mensura, EstadoParcelario, Relevamiento, Amojonamiento, Replanteo, PropiedadHorizontal, Unificacion, Loteo, Usucapion, BarrioCerradoClub
 
 urlpatterns = [
     path('mensura/', Mensura, name='mensura'),
-    path('estado-parcelario/', Estadoparcelario, name='estado-parcelario'),
+    path('estado-parcelario/', EstadoParcelario, name='estado-parcelario'),
     path('relevamiento/', Relevamiento, name='relevamiento'),
     path('amojonamiento/', Amojonamiento, name='amojonamiento'),
     path('replanteo/', Replanteo, name='replanteo'),

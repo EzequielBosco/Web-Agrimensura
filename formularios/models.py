@@ -11,6 +11,7 @@ contacto_servicio = [
     (8, 'Loteo'),
     (9, 'Plano de usucapión'),
     (10, 'Barrio cerrado o club de campo'),
+    (11, "Otro")
 ]
 
 class Contacto(models.Model):
@@ -18,7 +19,7 @@ class Contacto(models.Model):
     servicio = models.IntegerField(null=False, blank=False, choices=contacto_servicio)
     localidad = models.CharField(max_length=30)
     correo = models.EmailField(max_length=50)
-    numero_telefono = models.CharField(max_length=20)
+    numero_telefono = models.CharField(max_length=10)
     mensaje = models.TextField(max_length=2000)
     fecha = models.DateTimeField(auto_now_add=True)
 

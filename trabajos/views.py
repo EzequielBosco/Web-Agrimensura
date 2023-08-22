@@ -3,7 +3,7 @@ from django.shortcuts import render
 def Mensura(request):
     return render(request, 'trabajos/mensura.html')
 
-def Estadoparcelario(request):
+def EstadoParcelario(request):
     return render(request, 'trabajos/estado_parcelario.html')
 
 def Relevamiento(request):

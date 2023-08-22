@@ -1,6 +1,7 @@
 :root {
     --color: rgb(33, 37, 41);
     --color-1: rgba(33, 37, 41, 0.925);
+    --color-detalles: rgb(219, 116, 19);
 }
 
 h1 {
@@ -28,7 +29,7 @@ h1 {
     background-color: white;
     border-radius: 10px;
     margin-bottom: 5rem;
-    box-shadow:  5px 5px 8px #666666
+    box-shadow:  5px 5px 8px #666666    
 }
 
 .fondo-nosotros {
@@ -80,6 +81,11 @@ h1 {
     .fondo-nosotros {
         border-bottom-left-radius: 5% 3%;
     }
+}
+
+footer img {
+    margin: 10px;
+    height: 50px; width: 50px;
 }
 
 footer img:hover {
