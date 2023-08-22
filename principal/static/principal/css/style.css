@@ -1,13 +1,16 @@
 :root {
-    --color-nav: rgb(33, 37, 41);
-}
-
-hr {
-    background-color: var(--color-nav);
+    --color: rgb(33, 37, 41);
+    --color-1: rgba(33, 37, 41, 0.925);
 }
 
 h1 {
     font-size: 50px;
+}
+
+.title-principal {
+    margin: 20px;
+    font-size: 40px;
+    color: white;
 }
 
 .title-index {
@@ -22,12 +25,63 @@ h1 {
     width: 270px;
     height: 320px;
     padding: 0px;
-    background-color: var(--color-nav);
+    background-color: white;
     border-radius: 10px;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    box-shadow:  5px 5px 8px #666666
 }
 
-.img-nosotros {
-    margin: 10px;
-    padding: 0;
+.fondo-nosotros {
+    background-color: var(--color-1);
+    padding-bottom: 2rem;
+    margin-top: -25px;
+    border-bottom-left-radius: 6% 8%;
+}
+
+.fondo-trabajo {
+    background-color: white;
+}
+
+.card-trabajos {
+    transition: transform 0.3s ease;
+    box-shadow:  6px 6px 12px #6d6d6d
+}
+
+.card-trabajos:hover {
+    animation: scaleUp 0.3s ease;
+    transform: scale(1.03);
+    box-shadow: 7px 7px 14px #666666;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+.preguntas {
+    background-color: var(--color);
+    color: white;
+    padding-bottom: 2rem;
+    border-top-right-radius: 5% 50%;
+    border-top-left-radius: 5% 50%;
+    border-bottom-right-radius: 5% 50%;
+    border-bottom-left-radius: 5% 50%;
+}
+
+.card-preguntas {
+    box-shadow:  5px 5px 8px #666666
+}
+
+@media (max-width: 768px) {
+    .fondo-nosotros {
+        border-bottom-left-radius: 5% 3%;
+    }
+}
+
+footer img:hover {
+    opacity: 0.85;
 }

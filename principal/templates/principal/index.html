@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-7mQhpDl5nRA5nY9lr8F1st2NbIly/8WqhjTp+0oFxEA/QUuvlbF6M1KXezGBh3Nb" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'principal/css/style.css' %}">
     </head>
-        <nav  id="arriba" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <body style="background-image: url('{% static 'principal/assets/img/fondo-autocad3.jpg' %}');">
+        <nav id="arriba" class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'principal/assets/img/logo.png' %}" width="50" height=""> Agrimensura Bosco</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -30,64 +31,57 @@
                 <div class="text-center my-5">
                     <h1 class="fw-bolder">Agrimensura Bosco <img src="{% static 'principal/assets/img/logo.png' %}" width="190" height=""></h1>
                     <p class="lead mb-0 mb-2" >Midiendo desde 1988</p>
-                    <a href="{% url 'contacto' %}"><button class="btn btn-outline-dark flex-shrink-0" type="button" href="">Solicitar Presupuesto</button></a>
+                    <a class="btn btn-outline-dark" href="{% url 'contacto' %}">Solicitar Presupuesto</a>
                 </div>
             </div>
         </header>
-        <div id="nosotros" style="margin-top:-25px" class="navbar bg-dark"></div>
-        <div class="text-center py-3 mb-4">
-            <h2 class="title-index">- ¿Quiénes somos? -</h2>
-        </div>
-        <body style="background-image: url('{% static 'principal/assets/img/fondo-autocad3.jpg' %}');">
+        <main>
+            <div class="fondo-nosotros" id="nosotros">
+            <div class="text-center py-3 mb-4">
+                <h2 class="title-principal">- ¿Quiénes somos? -</h2>
+            </div>
             <div class="container px-2 px-lg-10">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="row gx-4 gx-lg-5 justify-content-between align-items-center">
                     <div class="col-lg-4">
                         <div class="card-nosotros">
-                            <img width="250px" height="300px" src="{% static 'principal/assets/img/estacioncampopanoramica.jpg' %}">
+                            <img class="rounded" width="260px" height="310px" src="{% static 'principal/assets/img/estacioncampopanoramica.jpg' %}">
                         </div>
                     </div>
                     <div class="col-lg-8">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h2>Hector Rafael Bosco</h2><br>
-                            <b>Ingeniero Agrimensor</b>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-10">
-                                    <ul class="list-unstyled mb-0">
-                                        <li>....</li>
-                                        <li>...</li>
-                                        <li>...</li>
-                                        <li>...</li>
-                                    </ul>
+                        <div class="card mb-5 border-dark border-2">
+                            <div class="card-header">
+                                <h2>Hector Rafael Bosco</h2><br>
+                                <b>Ingeniero Agrimensor</b>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Recibido de la Universidad de Morón en 1988</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            <br>
             <div class="container px-2 px-lg-10">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="col-md-10 col-lg-10 col-xl-10">
-                            <div class="my-0">
+                <div class="row gx-4 gx-lg-5 justify-content-between align-items-center">
+                        <div class="col-lg-8">
+                            <div class="col-md-10 col-lg-10 col-xl-10">
+                                <div class="my-0">
                                     <div class="col-lg-14">
-                                        <div class="card mb-10">
+                                        <div class="card mb-5 border-dark border-2">
                                             <div class="card-header">
                                                 <h2>Ezequiel Bosco</h2><br>
-                                                <b>Estudiante Ingenieria en Agrimensura</b>
+                                                <b>Estudiante</b>
                                             </div>
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-sm-10">
                                                         <ul class="list-unstyled mb-0">
-                                                            <li>....</li>
-                                                            <li>...</li>
-                                                            <li>...</li>
-                                                            <li>...</li>
+                                                            <li>Cursando Ingenieria en Agrimensura en la Universidad de Buenos Aires</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -95,166 +89,172 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-nosotros">
+                                <img class="rounded" width="260px" height="310px" src="{% static 'principal/assets/img/estacioncampo.jpg' %}">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card-nosotros">
-                            <img class="img-nosotros" width="250px" height="300px" src="{% static 'principal/assets/img/estacioncampo.jpg' %}">
-                        </div>
+                    <div class="container text-center mb-3">
+                        <a href="{% url 'contacto' %}"><button class="btn btn-outline-light" type="button" href="">Contactanos</button></a>
                     </div>
-                </div>
-                <div class="container text-center mb-3">
-                    <a href="{% url 'contacto' %}"><button class="btn btn-outline-light" type="button" href="">Contactanos</button></a>
                 </div>
             </div>
         </div>
-        <div class="text-center py-3 bg-light mb-4" id="trabajos">
+        </div>
+    </main>
+    <section>
+        <div class="text-center py-3 mb-4" id="trabajos">
             <h2 class="title-index">- Servicios que ofrecemos -</h2>
         </div>
         <div class="container">
             <div class="row gx-4 gx-lg-5 row-cols-5 row-cols-md-5 row-cols-xl-5 justify-content-center">
                 <div class="col mb-5">
-                    <div class="card h-100">
+                    <div class="card h-100 card-trabajos">
                         <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/estacioncampopanoramica1.jpg' %}"/>
                         <div class="container text-center">
-                        <h5 class="post-title">Mensuras</h5>
+                            <h5 class="post-title">Mensuras</h5>
                         </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'mensura' %}">Leer más →</a>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'mensura' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img style="max-width:100%;" width="100" height="227" class="card-img-top" src="{% static 'principal/assets/img/20221021_114637.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Estados Parcelarios</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'estado-parcelario' %}">Leer más →</a>
+                    <div class="col mb-5">
+                        <div class="card h-100 card-trabajos">
+                            <img style="max-width:100%;" width="100" height="227" class="card-img-top" src="{% static 'principal/assets/img/20221021_114637.jpg' %}"/>
+                            <div class="container text-center">
+                            <h5 class="post-title">Estados Parcelarios</h5>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'estado-parcelario' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Relevamientos</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'relevamiento' %}">Leer más →</a>
+                    <div class="col mb-5">
+                        <div class="card h-100 card-trabajos">
+                            <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial.jpg' %}"/>
+                            <div class="container text-center">
+                            <h5 class="post-title">Relevamientos</h5>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'relevamiento' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/estacion_axo.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Amojonamientos</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'amojonamiento' %}">Leer más →</a>
+                    <div class="col mb-5">
+                        <div class="card h-100 card-trabajos">
+                            <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/estacion_axo.jpg' %}"/>
+                            <div class="container text-center">
+                            <h5 class="post-title">Amojonamientos</h5>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'amojonamiento' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/anotando1.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Replanteos</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'replanteo' %}">Leer más →</a>
+                    <div class="col mb-5">
+                        <div class="card h-100 card-trabajos">
+                            <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/anotando1.jpg' %}"/>
+                            <div class="container text-center">
+                            <h5 class="post-title">Replanteos</h5>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'replanteo' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img style="max-width:100%;" width="100" height="227" class="card-img-top" src="{% static 'principal/assets/img/estacion_frente.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Propiedad Horizontal</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'propiedad-horizontal' %}">Leer más →</a>
+                    <div class="col mb-5">
+                        <div class="card h-100 card-trabajos">
+                            <img style="max-width:100%;" width="100" height="227" class="card-img-top" src="{% static 'principal/assets/img/estacion_frente.jpg' %}"/>
+                            <div class="container text-center">
+                            <h5 class="post-title">Propiedad Horizontal</h5>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'propiedad-horizontal' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/aparatos1.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Unificación</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'unificacion' %}">Leer más →</a>
+                    <div class="col mb-5">
+                        <div class="card h-100 card-trabajos">
+                            <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/aparatos1.jpg' %}"/>
+                            <div class="container text-center">
+                            <h5 class="post-title">Unificación</h5>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'unificacion' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img style="max-width:100%;"width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/loteos.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Loteos</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'loteo' %}">Leer más →</a>
+                    <div class="col mb-5">
+                        <div class="card h-100 card-trabajos">
+                            <img style="max-width:100%;"width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/loteos.jpg' %}"/>
+                            <div class="container text-center">
+                            <h5 class="post-title">Loteos</h5>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'loteo' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial1.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Usucapión</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'usucapion' %}">Leer más →</a>
+                    <div class="col mb-5">
+                        <div class="card h-100 card-trabajos">
+                            <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/gps-diferencial1.jpg' %}"/>
+                            <div class="container text-center">
+                            <h5 class="post-title">Usucapión</h5>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'usucapion' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/estacioncampo.jpg' %}"/>
-                        <div class="container text-center">
-                        <h5 class="post-title">Barrios cerrados</h5>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'barrio-cerrado-club' %}">Leer más →</a>
+                    <div class="col mb-5">
+                        <div class="card h-100 card-trabajos">
+                            <img style="max-width:100%;" width="100" height="250" class="card-img-top" src="{% static 'principal/assets/img/estacioncampo.jpg' %}"/>
+                            <div class="container text-center">
+                            <h5 class="post-title">Barrios cerrados</h5>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark flex-shrink-0" id="submitButton" type="submit" href="{% url 'barrio-cerrado-club' %}">Leer más →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="preguntas" class="text-center py-3 bg-light border-bottom mb-4">
-            <h2>- Preguntas Frecuentes -</h2>
-        </div>
-            <div class="container px-2 px-lg-10">
-                <div class="row gx-4 gx-lg-7 justify-content-center">
+        </section>
+        <section class="mb-3">
+            <div id="preguntas" class="container text-center py-3 mb-4 preguntas">
+                <h2 class="title-index">- Preguntas Frecuentes -</h2>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center mt-5">
                     <div class="col-lg-4">
                         <div class="col-md-10 col-lg-10 col-xl-10">
                             <div class="my-0">
                                 <div class="card h-100">
-                                    <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
+                                    <div class="text-center color-preguntas">
                                         <ul class="">
                                             <li><b>¿Tenemos equipamiento propio?</b></li>
                                         </ul>
@@ -264,19 +264,19 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-10">
-                                    <ul class="list-unstyled mb-0">
-                                        <li>Sí, tenemos el equipo necesario, actualizado y es de nuestra propiedad.</li>
-                                    </ul>
+                        <div class="card mb-4 card-preguntas">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Sí, tenemos el equipo necesario, actualizado y es de nuestra propiedad.</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
             <br>
             <div class="container px-2 px-lg-10">
@@ -285,7 +285,7 @@
                         <div class="col-md-10 col-lg-10 col-xl-10">
                             <div class="my-0">
                                 <div class="card h-100">
-                                    <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
+                                    <div class="text-center color-preguntas">
                                         <ul class="">
                                             <li><b>¿Por que área trabajamos?</b></li>
                                             <img width="30px" height="30px" src="{% static 'principal/assets/img/ubicacion.png' %}">
@@ -296,44 +296,14 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-10">
-                                    <ul class="list-unstyled mb-0">
-                                        <li>Trabajamos por todo Buenos Aires, en otro caso puede dejar un mensaje y nos ponemos en contacto para encontrarnos.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="container px-2 px-lg-10">
-                <div class="row gx-4 gx-lg-7 justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="col-md-10 col-lg-10 col-xl-10">
-                            <div class="my-0">
-                                <div class="card h-100">
-                                    <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
-                                        <ul class="">
-                                            <li><b>¿Somos profesionales matriculados?</b></li>
+                        <div class="card mb-4 card-preguntas">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Trabajamos por todo Buenos Aires, en otro caso puede dejar un mensaje y nos ponemos en contacto para encontrarnos.</li>
                                         </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-10">
-                                    <ul class="list-unstyled mb-0">
-                                        <li>Hector Rafael Bosco es un Ingeniero Agrimensor recibido de la UM en 1988.</li>
-                                        <li>Ezequiel Bosco es estudiante, actualmente cursando Ingenieria en Agrimensura en la UBA.</li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -346,10 +316,9 @@
                             <div class="col-md-10 col-lg-10 col-xl-10">
                                 <div class="my-0">
                                     <div class="card h-100">
-                                        <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
+                                        <div class="text-center color-preguntas">
                                             <ul class="">
-                                                <li><b>¿Como contactarnos?</b></li>
-                                                <img width="30px" height="30px" src="{% static 'principal/assets/img/correocontacto.png' %}">
+                                                <li><b>¿Somos profesionales matriculados?</b></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -357,43 +326,77 @@
                             </div>
                         </div>
                         <div class="col-lg-8">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-10">
-                                        <ul class="list-unstyled mb-0">
-                                            <li>Deje un mensaje haciendo Click en &nbsp; <a href="{% url 'contacto' %}"><button class="btn btn-outline-dark" type="button" href="">Contacto</button></a></li>
-                                        </ul>
+                            <div class="card mb-4 card-preguntas">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <ul class="list-unstyled mb-0">
+                                                <li>Si, Hector Rafael Bosco es un Ingeniero Agrimensor recibido de la UM en 1988.</li>
+                                                <li>Ezequiel Bosco es estudiante, actualmente cursando Ingenieria en Agrimensura en la UBA.</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    </div>
-                    <br>
-                    <div class="container px-2 px-lg-10">
-                        <div class="row gx-4 gx-lg-7 justify-content-center">
-                            <div class="col-lg-4">
-                                <div class="col-md-10 col-lg-10 col-xl-10">
-                                    <div class="my-0">
-                                        <div class="card h-100">
-                                            <div class="text-center" style="background-image: url('{% static 'principal/assets/img/toposa3.jpg' %}');">
-                                                <ul class="">
-                                                    <li><b>¿A qué nos dedicamos?</b></li>
+                        <br>
+                        <div class="container px-2 px-lg-10">
+                            <div class="row gx-4 gx-lg-7 justify-content-center">
+                                <div class="col-lg-4">
+                                    <div class="col-md-10 col-lg-10 col-xl-10">
+                                        <div class="my-0">
+                                            <div class="card h-100">
+                                                <div class="text-center color-preguntas">
+                                                    <ul class="">
+                                                        <li><b>¿Como contactarnos?</b></li>
+                                                        <img width="30px" height="30px" src="{% static 'principal/assets/img/correocontacto.png' %}">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card mb-4 card-preguntas">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-sm-10">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li>Deje un mensaje haciendo Click en &nbsp; <a href="{% url 'contacto' %}"><button class="btn btn-outline-dark" type="button" href="">Contacto</button></a></li>
                                                 </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8">
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-sm-10">
-                                            <ul class="list-unstyled mb-0">
-                                                <li>Realizamos trabajos de agrimensura  &nbsp; <a href="#trabajos"><button class="btn btn-outline-dark" type="button" href="">Ver Trabajos</button></a></li>
-                                            </ul>
+                            <br>
+                            <div class="container px-2 px-lg-10">
+                                <div class="row gx-4 gx-lg-7 justify-content-center">
+                                    <div class="col-lg-4">
+                                        <div class="col-md-10 col-lg-10 col-xl-10">
+                                            <div class="my-0">
+                                                <div class="card h-100">
+                                                    <div class="text-center color-preguntas">
+                                                        <ul class="">
+                                                            <li><b>¿A qué nos dedicamos?</b></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card mb-4 card-preguntas">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-10">
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li>Realizamos trabajos de agrimensura  &nbsp; <a href="#trabajos"><button class="btn btn-outline-dark" type="button" href="">Ver Trabajos</button></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -402,12 +405,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container text-center">
-            <a style="margin-bottom:15px;" class="btn btn-outline-light flex-shrink-0" href="#arriba">Volver al inicio</a>
-        </div>
+            <div class="container text-center mt-2">
+                <a style="margin-bottom:15px;" class="btn btn-outline-light flex-shrink-0" href="#arriba">Volver al inicio</a>
             </div>
-        </div>
+        </section>
         <footer class="py-5 bg-dark">
             <div class="aps-group text-center">
                 <div class="aps-each-icon icon-1-3" style="margin-bottom:10px;" data-aps-tooltip="Instagram">
@@ -423,7 +424,7 @@
             </div>
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Agrimensura Bosco | Web 2022 | Todos los derechos reservados</p></div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <script src="{% static 'js/scripts.js' %}"></script>
-    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
+</body>
 </html>

@@ -24,11 +24,11 @@
                                 <div class="form-floating">
                                 <p>
                                     <label for="id_nombre">Nombre</label>
-                                        <input type="text" name="nombre" class="form-control" maxlength="20" placeholder="Ingrese su nombre..." autofocus="" required="" id="id_nombre">
+                                        <input type="text" name="nombre" class="form-control" maxlength="20" placeholder="Ingrese su nombre..." autofocus id="id_nombre" required>
                                 </p>
                                 <p>
                                     <label for="id_servicio">Servicio requerido</label><br>
-                                    <select name="servicio" required="" id="id_servicio">
+                                    <select name="servicio" id="id_servicio" required>
                                         <option value="" selected="">-SELECCIONAR-</option>
                                         <option value="1">Mensura</option>
                                         <option value="2">Estado parcelario</option>
@@ -45,19 +45,19 @@
                                 </p>
                                 <p>
                                     <label for="id_localidad">Localidad</label>
-                                        <input type="text" name="localidad" class="form-control" maxlength="20" placeholder="Ingrese su localidad..." autofocus="" required="" id="id_localidad">
+                                        <input type="text" name="localidad" class="form-control" maxlength="20" placeholder="Ingrese su localidad..." id="id_localidad" required>
                                 </p>
                                 <p>
                                     <label for="id_correo">Correo</label>
-                                    <input type="email" name="correo" class="form-control" placeholder="Ingrese su correo..." required="" data-sb-validations="required,email" id="id_correo">
+                                    <input type="email" name="correo" class="form-control" placeholder="Ingrese su correo..." data-sb-validations="required,email" id="id_correo" required>
                                 </p>
                                 <p>
                                 <label for="id_numero_telefono">Número de Teléfono</label>
-                                <input type="tel" name="numero_telefono" class="form-control" placeholder="Ingrese su número de teléfono..." required="" id="id_numero_telefono">
+                                <input type="tel" name="numero_telefono" class="form-control" placeholder="Ingrese su número de teléfono..." id="id_numero_telefono" required>
                                 </p>
                                 <p>
                                 <label for="id_mensaje">Mensaje</label>
-                                <textarea type="text" name="mensaje" class="form-control" style="height: 10rem" placeholder="Ingrese su mensaje..." required="" id="id_mensaje"></textarea>
+                                <textarea type="text" name="mensaje" maxlength="200" class="form-control" placeholder="Ingrese su mensaje..." id="id_mensaje"></textarea>
                                 </p>
                             </div>
                                 <!-- Submit Button-->
@@ -81,7 +81,7 @@
                                     <ul class="list-unstyled mb-0">
                                         <li>- Ingeniero Agrimensor</li>
                                         <li><p>Hector Bosco</p></li>
-                                        <li>-Estudiante Agrimensura UBA</li>
+                                        <li>- Estudiante Agrimensura UBA</li>
                                         <li><p>Ezequiel Bosco</p></li>
                                         <!-- Divider-->
                                         <hr class="my-4" />

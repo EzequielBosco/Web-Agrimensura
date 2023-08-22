@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="{% static 'principal/css/style.css' %}">
     </head>
     {% block nav %}{% endblock %}
+    <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -28,7 +29,6 @@
             </div>
         </nav>
         {% block contenido %}{% endblock %}
-        <body>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="aps-group text-center">
